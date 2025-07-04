@@ -1,13 +1,16 @@
-reproduction: running git pull origin dev
+reproduction: 
+running
+     git pull origin dev
 
+solution: 
 run
 
-eval "$(ssh-agent -s)"
-ssh-add [path_to_id_rsa]
+    eval "$(ssh-agent -s)"
+    ssh-add [path_to_id_rsa]
 
 IN CASE OF
 It is required that your private key files are NOT accessible by others. This private key will be ignored.
 ,
 run firstly
-chmod 600 [path_to_id_rsa]
+    chmod 600 [path_to_id_rsa]
 and then eval, ssh-add above
